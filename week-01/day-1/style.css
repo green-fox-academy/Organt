@@ -1,0 +1,45 @@
+body {
+    margin: 0%;
+    background-image: url(background.png);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+
+}
+a {
+    color: #ff0099;
+}
+
+h1 {
+    font-size: 60px;
+    margin-top: 5%;
+}
+
+h2 {
+    color: #ff0099;
+}
+ h3 {
+     font-size: 40px;
+     text-align: center;
+ }
+
+ h4 {
+     font-size: 25px;
+ }
+.navigation {
+    vertical-align: auto;
+    height: 40px;
+    background-color: #33333369;
+    text-align: right;
+    color: rgb(223, 144, 144);
+    padding-right: 10%;
+
+}
+
+main {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#dashes {
+    text-align: center;
+}
