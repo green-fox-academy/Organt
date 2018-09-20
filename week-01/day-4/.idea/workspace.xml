@@ -2,29 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0edf08a-c6c9-46a5-a82a-5e0a80ff8507" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/AnimalsAndLegs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AverageOfInput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Bmi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CodingHours.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ConditionalVariableMutation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Cuboid.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DefineBasicInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FavouriteNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/HelloMe.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/HelloOthers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/HelloUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/HumptyDumpty.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IntroduceYourself.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MileToKmConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/OddEven.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/OneTwoALot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PartyIndicator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PrintBigger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SecondsInADay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Swap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TwoNumbers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/VariableMutation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CountFromTo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DrawPyramid.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DrawTriangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FizzBuzz.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IWontCheatOnTheExams.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MultiplicationTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PrintEven.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ConditionalVariableMutation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ConditionalVariableMutation.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -43,22 +29,22 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="26" />
+          <entry key="java" value="36" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="26" />
+          <entry key="JAVA" value="36" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="4096" />
+          <entry key="java" value="5059" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="4096" />
+          <entry key="JAVA" value="5059" />
         </counts>
       </usages-collector>
     </session>
@@ -66,10 +52,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/ConditionalVariableMutation.java">
+        <entry file="file://$PROJECT_DIR$/src/DrawPyramid.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="62" column="8" selection-start-line="62" selection-start-column="8" selection-end-line="62" selection-end-column="8" />
+            <state relative-caret-position="119">
+              <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -112,6 +98,14 @@
         <option value="$PROJECT_DIR$/src/PrintBigger.java" />
         <option value="$PROJECT_DIR$/src/PartyIndicator.java" />
         <option value="$PROJECT_DIR$/src/ConditionalVariableMutation.java" />
+        <option value="$PROJECT_DIR$/src/IWontCheatOnTheExams.java" />
+        <option value="$PROJECT_DIR$/src/PrintEven.java" />
+        <option value="$PROJECT_DIR$/src/test.java" />
+        <option value="$PROJECT_DIR$/src/MultiplicationTable.java" />
+        <option value="$PROJECT_DIR$/src/CountFromTo.java" />
+        <option value="$PROJECT_DIR$/src/FizzBuzz.java" />
+        <option value="$PROJECT_DIR$/src/DrawTriangle.java" />
+        <option value="$PROJECT_DIR$/src/DrawPyramid.java" />
       </list>
     </option>
   </component>
@@ -121,7 +115,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="932" />
     <option name="width" value="988" />
     <option name="height" value="1038" />
@@ -157,7 +151,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537451199684" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537457307791" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -171,56 +165,56 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ConditionalVariableMutation">
-    <configuration name="ConditionalVariableMutation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ConditionalVariableMutation" />
+  <component name="RunManager" selected="Application.DrawTriangle">
+    <configuration name="CountFromTo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CountFromTo" />
       <module name="day-4" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OddEven" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="OddEven" />
+    <configuration name="DrawTriangle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DrawTriangle" />
       <module name="day-4" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OneTwoALot" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="OneTwoALot" />
+    <configuration name="FizzBuzz" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="FizzBuzz" />
       <module name="day-4" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PartyIndicator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="PartyIndicator" />
+    <configuration name="MultiplicationTable" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MultiplicationTable" />
       <module name="day-4" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PrintBigger" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="PrintBigger" />
+    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test" />
       <module name="day-4" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.OddEven" />
-      <item itemvalue="Application.OneTwoALot" />
-      <item itemvalue="Application.PrintBigger" />
-      <item itemvalue="Application.PartyIndicator" />
-      <item itemvalue="Application.ConditionalVariableMutation" />
+      <item itemvalue="Application.test" />
+      <item itemvalue="Application.MultiplicationTable" />
+      <item itemvalue="Application.CountFromTo" />
+      <item itemvalue="Application.FizzBuzz" />
+      <item itemvalue="Application.DrawTriangle" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ConditionalVariableMutation" />
-        <item itemvalue="Application.PartyIndicator" />
-        <item itemvalue="Application.PrintBigger" />
-        <item itemvalue="Application.OneTwoALot" />
-        <item itemvalue="Application.OddEven" />
+        <item itemvalue="Application.DrawTriangle" />
+        <item itemvalue="Application.FizzBuzz" />
+        <item itemvalue="Application.CountFromTo" />
+        <item itemvalue="Application.MultiplicationTable" />
+        <item itemvalue="Application.test" />
       </list>
     </recent_temporary>
   </component>
@@ -234,15 +228,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1537432216498</updated>
-      <workItem from="1537432219798" duration="18324000" />
+      <workItem from="1537432219798" duration="24244000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18324000" />
+    <option name="totallyTimeSpent" value="24244000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Image Layers" />
@@ -451,6 +445,58 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
           <caret line="62" column="8" selection-start-line="62" selection-start-column="8" selection-end-line="62" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/IWontCheatOnTheExams.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PrintEven.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MultiplicationTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CountFromTo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FizzBuzz.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DrawTriangle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="29" lean-forward="true" selection-start-line="4" selection-start-column="8" selection-end-line="6" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DrawPyramid.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
         </state>
       </provider>
     </entry>
