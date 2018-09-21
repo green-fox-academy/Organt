@@ -5,11 +5,14 @@ public class DrawPyramid {
         Scanner sc = new Scanner(System.in);
         System.out.println("Hey, Yo, give me some number, bro..");
         int x = sc.nextInt();
-        String space = "";
+        String k = "*";
+
         for (int j = 1; j <= x; j++) {
-            for (int i = 1; i < x; i++) {
-                String space +=" "
-            } System.out.println(space + "*");
+            for (int i =1; i <= (x-j); i++){
+                System.out.print(" ");
+            }
+            System.out.println(k);
+            k += "**";
         }
 
     }
