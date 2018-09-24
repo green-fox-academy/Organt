@@ -9,26 +9,35 @@ public class Unique {
         //  Example
         //  System.out.println(unique(new int[] {1, 11, 34, 11, 52, 61, 1, 34}));
         //  should print: `[1, 11, 34, 52, 61]`
-    int [] randomArray = {1, 11, 34, 11, 52, 61, 1, 34};
+    int [] randomArray = {1, 11, 34, 11, 52, 61, 1, 34, 123, 123, 4};
 
-            System.out.print(unique(randomArray)[3]);
+
+
+        System.out.println(unique(randomArray));
 
 
     }
 
-    public static int [] unique (int [] array) {
+    public static String unique (int [] array) {
         int [] unique = {array[0]};
 
         for (int i = 1; i < array.length; i++) {
             for (int j = 0; j < unique.length; j++) {
                 if (array[i] == unique[j]) {j = unique.length;}
-                else if (i == j+1) {
+                else if (j == unique.length-1) {
                     unique = addNumber(unique, array[i]);}
                 }
         }
-        return unique;
+        return Arrays.toString(toString(unique));
     }
 
+    public static String [] toString (int [] array) {
+        String [] s = new String[array.length];
+        for (int i = 0; i < array.length; i++){
+            s[i] = String.valueOf(array[i]);
+        }
+        return s;
+    }
 
 
 
