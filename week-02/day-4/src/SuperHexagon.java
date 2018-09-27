@@ -13,14 +13,12 @@ public class SuperHexagon {
         int number = 4;
         int height = 1 + (number - 1) * 2;
 
-        int x1 = (a / 2 + (number - 1) * 3 * a / 2);
-        int y1 = 0;
-        int x1right = 0;
-        int y1right = 0;
+
+
 
         for (int i = 0; i < number; i++) {
-            x1 = (int) ((a / 2 + (number - 1) * 3 * a / 2) - i * (3 * a / 2));
-            y1 = (int) 0 + i * ((int) h() / 2);
+            int x1 = (int) ((a / 2 + (number - 1) * 3 * a / 2) - i * (3 * a / 2));
+            int y1 = (int) 0 + i * ((int) h() / 2);
 
             for (int j = 0; j < height-i; j++) {
                 hexagon(graphics, x1, y1);
