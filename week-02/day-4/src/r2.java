@@ -10,17 +10,17 @@ public class r2 {
 
         int lines = 14;
         int space = 15;
-        graphics.setColor(new Color(0,170,0));
-        graphics.drawLine(WIDTH/2, HEIGHT/2-lines*space, WIDTH/2, HEIGHT/2+lines*space);
-        for (int i = 1; i < lines+1; i++) {
+        graphics.setColor(new Color(0, 170, 0));
+        graphics.drawLine(WIDTH / 2, HEIGHT / 2 - lines * space, WIDTH / 2, HEIGHT / 2 + lines * space);
+        for (int i = 1; i < lines + 1; i++) {
             //top left corner
-            graphics.drawLine(WIDTH/2-i*space, HEIGHT/2, WIDTH/2, HEIGHT/2-(lines-i+1)*space);
+            graphics.drawLine(WIDTH / 2 - i * space, HEIGHT / 2, WIDTH / 2, HEIGHT / 2 - (lines - i + 1) * space);
             //top right corner
-            graphics.drawLine(i*space+WIDTH/2, HEIGHT/2, WIDTH/2,HEIGHT/2-(space*(lines-i+1) ));
+            graphics.drawLine(i * space + WIDTH / 2, HEIGHT / 2, WIDTH / 2, HEIGHT / 2 - (space * (lines - i + 1)));
             //down left corner
-            graphics.drawLine(WIDTH/2, HEIGHT/2 + space*i, WIDTH/2-((lines-i+1)*space), HEIGHT/2 );
+            graphics.drawLine(WIDTH / 2, HEIGHT / 2 + space * i, WIDTH / 2 - ((lines - i + 1) * space), HEIGHT / 2);
             //down right corner
-            graphics.drawLine(WIDTH/2+(i*space), HEIGHT/2, WIDTH/2,HEIGHT/2+((lines-i+1)*space));
+            graphics.drawLine(WIDTH / 2 + (i * space), HEIGHT / 2, WIDTH / 2, HEIGHT / 2 + ((lines - i + 1) * space));
         }
 
 
