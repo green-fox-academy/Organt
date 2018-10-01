@@ -10,7 +10,7 @@ public class SuperHexagon {
     public static void mainDraw(Graphics graphics) {
 
 
-        int number = 4;
+        int number = 5;
         int height = 1 + (number - 1) * 2;
 
 
