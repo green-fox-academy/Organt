@@ -33,9 +33,10 @@ public class Logs {
     public static List<String> ip (List lines) {
         List<String> ips = new ArrayList<String>();
         ips.add(lines.get(0).toString().substring(27, 38));
-        for (int i = 0; i < lines.size(); i++) {
+        for (int i = 1; i < lines.size(); i++) {
             for (int j = 0; j < ips.size(); j++) {
-                if (!lines.get(i).toString().substring(27, 38).equals(ips.get(j)) && j == ips.size() - 1){
+                if (lines.get(i).toString().substring(27, 38).equals(ips.get(j))){break; }
+                else if (j == ips.size()-1) {
                     ips.add(lines.get(i).toString().substring(27, 38));
                 }
             }
