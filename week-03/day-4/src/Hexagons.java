@@ -25,7 +25,7 @@ public class Hexagons {
         double x1 = s1 - a / 2;
         double y1 = s2 - h(a) / 2;
         int[] x = {(int)x1, (int)(x1 + a), (int)(x1 + a + a / 2), (int)(x1 + a), (int)(x1), (int)(x1 - a / 2)};
-        int[] y = {(int)y1, (int)y1, (int)(y1 + h(a) / 2), (int)y1 + (int) h(a), (int)(y1 +  h(a)), (int)(y1 + h(a) / 2)};
+        int[] y = {(int)y1, (int)y1, (int)(y1 + h(a) / 2), (int)(y1 + h(a)), (int)(y1 +  h(a)), (int)(y1 + h(a) / 2)};
 
         graphics.drawPolygon(x, y, 6);
     }
