@@ -7,10 +7,12 @@ import static javax.swing.JFrame.EXIT_ON_CLOSE;
 public class TriangleFractal {
 
     public static void mainDraw(Graphics graphics) {
-        int[] x = {0, WIDTH, WIDTH / 2};
-        int [] y = {5, 5, 5 + (int)(2 * h(WIDTH / 2))};
-        graphics.drawPolygon( x, y, 3);
-        fractalT(graphics, WIDTH / 2, 5, WIDTH / 2);
+        double a = WIDTH / 2 - Math.random()*30;
+        int[] x = {(int)(WIDTH / 2 - a ), (int)(WIDTH / 2 + a), WIDTH / 2};
+        int [] y = {5, 5, 5 + (int)(2 * h(a))};
+        graphics.setColor(randomColor());
+        graphics.fillPolygon( x, y, 3);
+        fractalT(graphics, WIDTH / 2, 5, a);
     }
 
     public static void fractalT(Graphics graphics, double x, double y, double a) {
@@ -25,28 +27,26 @@ public class TriangleFractal {
 
         }
     }
-//    public static void hex(Graphics graphics, double x, double y, double a) {
-//        if (a <= 30) {
-//            hexagon(graphics, x, y, a);
-//        }
-//        else {
-//            hexagon(graphics, x, y, a);
-//            hex(graphics, x - a / 4, y - h(a) / 4, a /2);
-//            hex(graphics, x + a / 2, y, a / 2);
-//            hex(graphics, x - a / 4, y + h(a) / 4, a / 2);
-//        }
-//    }
+
     public static void triangle(Graphics graphics, double x1, double y1, double a) {
         int[] x = {(int)x1,  (int)(x1 + a /2), (int)(x1 - a / 2)};
         int[] y = {(int)y1, (int)(y1 + h(a)), (int)(y1 + h(a))};
 
-        graphics.drawPolygon(x, y,3);
+        graphics.setColor(randomColor());
+        graphics.fillPolygon(x, y, 3);
     }
 
 
     public static double h(double a) {
         double h = a * (Math.sqrt(3) / 2);
         return h;
+    }
+
+    public static Color randomColor() {
+        int r = (int)(Math.random()*256);
+        int g = (int)(Math.random()*256);
+        int b = (int)(Math.random()*256);
+        return new Color(r, g, b);
     }
 
 
@@ -63,6 +63,14 @@ public class TriangleFractal {
         jFrame.setLocationRelativeTo(null);
         jFrame.setVisible(true);
         jFrame.pack();
+        while(true){
+            try {
+                Thread.sleep(100);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            panel.repaint();
+        }
     }
 
     static class ImagePanel extends JPanel {
