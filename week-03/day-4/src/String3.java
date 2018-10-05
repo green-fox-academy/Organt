@@ -1,15 +1,14 @@
 public class String3 {
     public static void main(String[] args) {
         // Given a string, compute recursively a new string where all the
-// adjacent chars are now separated by a "*".
+        // adjacent chars are now separated by a "*".
 
-        System.out.println(separate("Hell**o Vojta, how are you?"));
+        System.out.println(separate("Hello Vojta, how are you?"));
     }
     public static String separate(String s) {
         if (s.length() == 1) {
             return s;
-        }
-        else {
+        } else {
             return (s.charAt(0) + "*" + separate(s.substring(1)));
         }
     }
