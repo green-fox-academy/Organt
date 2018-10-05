@@ -9,8 +9,6 @@ public class CircleFractal {
     public static void mainDraw(Graphics graphics) {
         double r = WIDTH - Math.random()*100;
         fractalC(graphics, WIDTH /2, WIDTH / 2, r);
-
-
     }
 
     public static void fractalC(Graphics graphics, double x, double y, double r) {
@@ -22,8 +20,6 @@ public class CircleFractal {
             fractalC(graphics, x, y - r / 4, r / 2 );
             fractalC(graphics, x + distanceOfCenter(r), y + distanceOfCenter(r), r / 2 );
             fractalC(graphics, x - distanceOfCenter(r), y + distanceOfCenter(r), r / 2 );
-
-
         }
     }
 
