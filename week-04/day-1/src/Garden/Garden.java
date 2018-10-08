@@ -1,3 +1,5 @@
+package Garden;
+
 import java.util.ArrayList;
 
 public class Garden {
@@ -9,12 +11,16 @@ public class Garden {
         double water = waterAmount / (trees.size()) + (flowers.size());
         for (Flower flower:
                 flowers) {
-            flower.watering(water);
+            if (flower.needsWater()) {
+                flower.watering(water);
+            }
             flower.status();
         }
         for (Tree tree:
              trees) {
-            tree.watering(water);
+            if (tree.needsWater()) {
+                tree.watering(water);
+            }
             tree.status();
         }
     }

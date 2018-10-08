@@ -1,3 +1,5 @@
+package People;
+
 public class Student extends Person {
     String previousOrganization;
     int skippedDays;

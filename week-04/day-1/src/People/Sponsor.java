@@ -1,3 +1,5 @@
+package People;
+
 public class Sponsor extends Person {
     String company;
     int hiredStudents;
