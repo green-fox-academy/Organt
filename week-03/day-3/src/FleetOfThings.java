@@ -1,3 +1,5 @@
+import java.util.Collections;
+
 public class FleetOfThings {
 
     public static void main(String[] args) {
@@ -16,6 +18,9 @@ public class FleetOfThings {
         fleet.add(new Thing("Remove the obstacles"));
         fleet.add(standUp);
         fleet.add(eatLunch);
+
+
+        Collections.sort(fleet.things);
 
 
 

@@ -1,6 +1,7 @@
 import java.util.Arrays;
+import java.util.Collection;
 
-public class Domino {
+public class Domino implements Comparable<Domino>{
     private final int[] values;
 
     public Domino(int valueA, int valueB) {
@@ -14,5 +15,10 @@ public class Domino {
     @Override
     public String toString() {
         return "[" + values[0] + ", " + values[1] + "]";
+    }
+
+    @Override
+    public int compareTo(Domino d) {
+        return values[0] - d.values[0];
     }
 }
