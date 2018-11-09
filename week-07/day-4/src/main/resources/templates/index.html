@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+    <link rel="stylesheet" type="text/css" href="/style.css" media="screen" />
+</head>
+<body>
+    <ul>
+        <li>
+            <a href="/login">Login</a>
+        </li>
+        <li>
+            <a href="/nutritionStore">Nutrition Store</a>
+        </li>
+        <li>
+            <a href="/trickCenter">Trick Center</a>
+        </li>
+    </ul>
+    <img src="/fox.png">
+    <p th:if="fox" th:text="'This is ' + ${fox.getName()} + '. Currently living on ' + ${fox.getFood()} + ' and ' + ${fox.getDrink()} + '. He knows ' +${fox.getListOfTricks().size()}+' tricks.'"></p>
+    <h1>Known tricks</h1>
+    <ul th:each="tricks : ${fox.getListOfTricks()}">
+        <li th:text="${tricks}"> </li>
+    </ul>
+</body>
+</html>

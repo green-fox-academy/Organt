@@ -1,0 +1,68 @@
+body {
+    background-color: gray;
+    color: rgb(77, 73, 73);
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+h1 {
+    font-size: 25px;
+    font-weight: lighter;
+    padding-left: 30px;
+}
+
+.login-box {
+    width: 360px;
+    padding: 15px;
+    margin: auto;
+    font-weight: thin;
+    background-color: white;
+
+}
+
+.login-form {
+    position: relative;
+    padding-left: 30px;
+
+}
+#username {
+    border: 1px solid green;
+    
+}
+
+label {
+    font-size: 10px;
+    display: block;
+    padding-bottom: 5px;
+    padding-top: 10px;
+}
+
+input {
+    width: 280px;
+    height: 30px;
+    display: block;
+}
+
+.forgotpassword {
+    color: rgb(114, 111, 111);
+    float: right;
+    font-size: 10px;
+    text-decoration: none;
+    display: block;
+    margin-top: 5px;
+    margin-right: 45px;
+
+}
+
+button {
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    border: 0px;
+    height: 40px;
+    width: 90px;
+    display: block;
+    margin-top: 45px;
+    margin-bottom: 25px;
+
+}

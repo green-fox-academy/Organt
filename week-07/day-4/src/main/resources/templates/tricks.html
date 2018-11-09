@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Tricks</title>
+    <link rel="stylesheet" type="text/css" href="/style.css" media="screen" />
+</head>
+<body>
+<ul>
+    <li>
+        <a href="/">Information</a>
+    </li>
+    <li>
+        <a href="/login">Login</a>
+    </li>
+    <li>
+        <a href="/nutritionStore">Nutrition Store</a>
+    </li>
+</ul>
+<p th:if="${error}" th:text="${error}"></p>
+<form th:if="!${error}" method="post" action="/trickCenter">
+    Tricks: <select name="trick" >
+        <option th:each="trick : ${tricks}" th:text="${trick}"></option>
+    </select>
+    <input type="submit" value="Learn">
+</form>
+
+</body>
+</html>

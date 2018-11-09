@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Encoder</title>
+</head>
+<body>
+    <form action="decoder">
+        Text : <input type="text" name="text">
+        Number : <input type="number" name="number">
+        <button type="submit">Decode!</button>
+    </form>
+    <p th:if="${decodedText}" th:text="${decodedText}"></p>
+
+</body>
+</html>

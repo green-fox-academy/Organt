@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="/style.css" media="screen" />
+</head>
+<body>
+    <table border="1">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Balance</th>
+        <th>animalType</th>
+        <th>Owner</th>
+        <th>Character</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="account : ${accounts}" th:class="${account.isKing()} ? 'true' : 'false'" th:switch="${account.getCharacter()}">
+        <td th:text="${account.getId()}"/>
+        <td th:text="${account.getName()}"/>
+        <td th:text="${account.getBalance()} + ' ' + ${account.getCurrency()}"/>
+        <td th:text="${account.getAnimalType()}"/>
+        <td th:text="${account.isKing()} ? 'King' : 'Not King'"></td>
+        <td th:case="'Good Guy'" th:text="'Good Guy'"/>
+        <td th:case="'Bad Guy'" th:text="'Bad Guy'"/>
+        <form th:action="'/show-all'">
+            <input type="hidden" method="get" name="name" th:value="${account.getName()}">
+            <td><button type="submit" value="Submit">Raise Balance</button></td>
+            </input>
+        </form>
+    </tr>
+    </tbody>
+    </table>
+</body>
+</html>

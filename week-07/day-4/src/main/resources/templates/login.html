@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="/style.css" media="screen" />
+</head>
+<body>
+<ul>
+    <li>
+        <a href="/">Information</a>
+    </li>
+    <li>
+        <a href="/nutritionStore">Nutrition Store</a>
+    </li>
+    <li>
+        <a href="/trickCenter">Trick Center</a>
+    </li>
+</ul>
+    <h1>Welcome to Programmer Fox Club!</h1>
+    <p>Please provide a name, so you can associate it to your pet!</p>
+    <form action="/login" method="post">
+        Name: <input type="text" name="name">
+        <button type="submit">GO</button>
+    </form>
+    <p th:if="error" id="error_new" th:text="${error}"></p>
+</body>
+</html>
