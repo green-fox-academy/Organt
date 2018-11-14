@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Todolist</title>
+    <link href="webjars/bootstrap/3.3.7-1/css/bootstrap.min.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="jumbotron">
+<h1>Todos for today:</h1>
+<a href="/todo/list/add">Add new todo</a>
+    <table border="1">
+        <thead>
+            <tr>
+                <td>ID</td>
+                <td>Title</td>
+                <td>Done</td>
+                <td>Urgent</td>
+
+            </tr>
+        </thead>
+        <tbody th:each="todo : ${todos}">
+            <tr>
+                <td th:text="${todo.getId()}"></td>
+                <td th:text="${todo.getTitle()}"></td>
+                <td  th:text="${todo.isDone()}"></td>
+                <td th:text="${todo.isUrgent()}"></td>
+                <td>
+                    <form th:action="'/todo/' + ${todo.getId()} + '/delete'" method="get">
+                        <button th:name="${todo.getId()}" th:text="Delete"></button>
+                    </form>
+                </td>
+                <td>
+                    <form th:action="'/todo/' + ${todo.getId()} + '/edit'" method="get">
+                        <button th:name="${todo.getId()}" th:text="edit"></button>
+                    </form>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+</div>
+<script src="webjars/jquery/1.11.1/jquery.min.js"></script>
+<script src="webjars/bootstrap/3.3.7-1/js/bootstrap.min.js"></script>
+</body>
+</html>

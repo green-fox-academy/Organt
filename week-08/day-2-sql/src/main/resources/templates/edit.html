@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="webjars/bootstrap/3.3.7-1/css/bootstrap.min.css" rel="stylesheet"/>
+</head>
+<body>
+    <h1>Edit Todo</h1>
+    <form th:action="'/todo/' + ${todo.getId()} + '/edit'" method="post">
+        Todo description : <input type="text" name="edit" th:value="${todo.getTitle()}">
+        Urgent : <input type="checkbox" name="urgent" th:checked="${todo.isUrgent()}">
+        Done : <input type="checkbox" name="done" th:checked="${todo.isDone()}">
+        <button type="submit" th:text="Submit"></button>
+        <a href="/todo/list" th:text="Cancel"></a>
+
+    </form>
+    <script src="webjars/jquery/1.11.1/jquery.min.js"></script>
+    <script src="webjars/bootstrap/3.3.7-1/js/bootstrap.min.js"></script>
+</body>
+</html>
