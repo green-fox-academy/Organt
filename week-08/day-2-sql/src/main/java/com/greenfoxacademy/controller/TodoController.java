@@ -65,4 +65,10 @@ public class TodoController {
         database.save(todo);
         return "redirect:/todo/list";
     }
+
+    @GetMapping(value = "/list/search")
+    public String search(Model model, String search) {
+        model.addAttribute("todos", database.findAllAndOrderById());
+        return "todos";
+    }
 }

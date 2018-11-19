@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Todolist</title>
+    <link rel="stylesheet" type="text/css" href="/style.css" media="screen" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+<body>
+<div class="todolist">
+    <h1>Todos for today:</h1>
+    <a href="/todo/list/add" class="addtodo">Add new todo</a>
+    <div class="search-container">
+        <form action="/todo/list/search">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+    </div>
+    <table class="cinereousTable">
+        <thead>
+        <tr>
+            <td>ID</td>
+            <td>Title</td>
+            <td>Done</td>
+            <td>Urgent</td>
+
+        </tr>
+        </thead>
+        <tbody th:each="todo : ${todos}">
+        <tr>
+            <td th:text="${todo.getId()}"></td>
+            <td th:text="${todo.getTitle()}"></td>
+            <td  th:text="${todo.isDone()}"></td>
+            <td th:text="${todo.isUrgent()}"></td>
+            <td>
+                <form th:action="'/todo/' + ${todo.getId()} + '/delete'" method="get">
+                    <button class="delete-button" th:name="${todo.getId()}" th:text="Delete"></button>
+                </form>
+            </td>
+            <td>
+                <form th:action="'/todo/' + ${todo.getId()} + '/edit'" method="get">
+                    <button class="edit-button" th:name="${todo.getId()}" th:text="edit"></button>
+                </form>
+            </td>
+        </tr>
+
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

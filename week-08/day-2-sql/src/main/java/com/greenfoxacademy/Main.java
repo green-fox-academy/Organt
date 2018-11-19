@@ -22,10 +22,10 @@ public class Main implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        database.save(new Todo("poklop1"));
-        database.save(new Todo("poklop2", true, true));
-        database.save(new Todo("poklop3", true, false));
-        database.save(new Todo("poklop4", false, true));
+//        database.save(new Todo("poklop1"));
+//        database.save(new Todo("poklop2", true, true));
+//        database.save(new Todo("poklop3", true, false));
+//        database.save(new Todo("poklop4", false, true));
 
     }
 }
