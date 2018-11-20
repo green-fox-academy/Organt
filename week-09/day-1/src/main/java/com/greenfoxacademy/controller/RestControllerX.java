@@ -3,6 +3,9 @@ package com.greenfoxacademy.controller;
 import com.greenfoxacademy.model.*;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+import java.util.Map;
+
 @RestController
 public class RestControllerX {
 
@@ -26,6 +29,13 @@ public class RestControllerX {
         return new DoUntil(action, until);
     }
 
-    @PostMapping(value = "/arrays")
-    public
+    @PostMapping("/arrays")
+    public ArrayHandler sdf(@RequestBody ArrayInput arrayInput){
+        return new ArrayHandler(arrayInput.getWhat(), arrayInput.getNumbers());
+    }
+
+//    @GetMapping(value = "/log")
+//    public Log log(){
+//        return Log
+//    }
 }
