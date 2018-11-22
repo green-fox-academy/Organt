@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="/style.css" media="screen" />
+</head>
+<body>
+    <p th:if="${error}" th:text="${error}" id="error"></p>
+    <p th:if="${link}" th:text="'Your URL is aliased to ' + ${link.getAlias()} + ' and your secret code is ' + ${link.getSecretCode()}"></p>
+    <form action="/save-link" class="conatiner" method="post">
+    <label for="url">URL</label>
+    <input type="text" id="url" name="url">
+    <label for="alias">Alias</label>
+    <input type="text" id="alias" name="alias">
+    <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
